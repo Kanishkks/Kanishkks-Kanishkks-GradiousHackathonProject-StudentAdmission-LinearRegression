@@ -17,7 +17,10 @@ streamlit run app.py
 This Documentation is made to update the whole process and working done within the machine learning model. 
 The main reason for making this model is to identify your chances of gainging the insights of chances for you to get into a University
 
-**What does the Model do! (Code Level)**
+**What is the dataset being used:**
+    We will be using a Dataset which contains the necessary things for university admission for example Test scores, university rating, CGPA, letter of recommendation score, Statement of purpose, and research experience to find the chnaces of landing an admission into that university
+
+**What does the Model do! (Code Level):**
     The model first imports the necessary libraries one by one for future uses
     Then the code will import the dataFrame of the already made prediction/ Actual values from real world scenarioes which has knowledgable insights of the data
     these datas are used to find / predict the probability of us getting into a University
