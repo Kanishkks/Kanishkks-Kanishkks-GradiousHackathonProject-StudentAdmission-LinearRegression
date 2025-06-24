@@ -12,7 +12,7 @@ then run
 streamlit run app.py
 ```
 
-#*University Prediction Analyser for Admissions*
+*University Prediction Analyser for Admissions*
 
 This Documentation is made to update the whole process and working done within the machine learning model. 
 The main reason for making this model is to identify your chances of gainging the insights of chances for you to get into a University
@@ -22,23 +22,23 @@ The main reason for making this model is to identify your chances of gainging th
     Then the code will import the dataFrame of the already made prediction/ Actual values from real world scenarioes which has knowledgable insights of the data
     these datas are used to find / predict the probability of us getting into a University
     After this is done, We can visualize within the ipynb Code about the dataFrame.
-    ### Now we dive into Data PreProcessing:- 
+##### Now we dive into Data PreProcessing:- 
         First of all we will clear out any Null Values If present
         Then we will remove all unwanted columns within the dataFrame
         If there is any Irregularities then we could perform ScalarStandardization or Normalization. But here we dont need to perform those since our data set is clear.
         If we wanted to, We could also perform One Hot encoding. But it is not suitable in this data
-    ### Then we move on to the Visualization
+### Then we move on to the Visualization
         After visualizing the model, We can figure out some patterns and correlation between columns
         The HeatMap gave us insight on which column are dependent upon which other columns.
             Here, We found that the admission chances is mostly dependent upon the pre and final term tests and also the cgpa of a student
         Then from the LMPlot with facetgrid and regplots we figured out that people with lower scores of SOP and LOR tend to apply for low level universities. But some still apply for high tier universities in hopes of gaining the UG Admissions
         The final plot shows us the relationship between CGPA and The Universities rating when it comes to people who has a research experiencec and apply for these     
-    ### Then we move on to the model Processing:- 
+### Then we move on to the model Processing:- 
         After learning the insights about the data frames and how each columns are interconnected to each other, We can start processing the data so that we can predict the values
         First of all, We must split the dataframe into train and test data with 20% of the data going to testing process with random state of 65 and evaluating the model
         After consideration of the Machine learning models, We can go ahead and use Linear Regression to find out the probability
         We first declare the model and train the model using training dataset
-    ### we predicted the values for evaluation and visualization
+### we predicted the values for evaluation and visualization
         After model training, we can predict the values for the test dataset so that we can fine tune the data model
         Model evaluation
             We will be using the MSE score which is commonly used for regression models like linear regression. 
@@ -56,7 +56,7 @@ The main reason for making this model is to identify your chances of gainging th
             After creating the model, We finally start to visualize it by creating the differentiation of the values with Actual and the predicted values.
             This scatter plot shows us the meadian line and the scatter of datapoints which helps us to figure out how much error each points have from the meadian line
             The closer the point is to the line, The lesser the error occured
-    ### Finally we store our data model in a pkl file for further demonstration/ applications
+### Finally we store our data model in a pkl file for further demonstration/ applications
         we use pkl model storage to store our model using joblib and use the model outside of this file 
 
 After occuring the model, we must use the model to visualize or create an interface for others to predict their chances of the oppurtunity of getting admission into a university
